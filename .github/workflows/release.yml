@@ -1,0 +1,15 @@
+name: Release
+on:
+  push:
+    tags:
+      - "v**"
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - uses: cachix/haskell-release-action@ba22fe459017065afb51fb48f3f5ab2c1bd5eade
+        with:
+          branch: main
+          hackage-token: "nothing"
