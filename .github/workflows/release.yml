@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - uses: cachix/haskell-release-action@ba22fe459017065afb51fb48f3f5ab2c1bd5eade
+      - uses: cachix/haskell-release-action@41a5998a0562421c320136c14246a8dfd10c1925
         with:
           branch: main
           hackage-token: "nothing"
