@@ -10,7 +10,7 @@ jobs:
     permissions: write-all
     steps:
       - uses: actions/checkout@v3
-      - uses: cachix/haskell-release-action@34bd4627daa3b2c21eef8be57f0fc585832613b7
+      - uses: cachix/haskell-release-action@5d61943e5c666ca828c6ba593a572982df2c548a
         with:
           branch: main
           hackage-token: "nothing"
